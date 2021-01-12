@@ -280,17 +280,17 @@ if __name__=='__main__':
                         say('barely, starting of the night')
                     if Time>=20 and Time<24:
                         text=  'it\'s about'+str(Time)
-                        say(text
+                        say(text)
                     if 'actual' in st:
-                        tm_hour = datetime.datetime.now().hour
-                        tm_hours = str(tm_hour)+'hours'
-                        tm_min=datetime.datetime.now().minute
-                        tm_mins=str(tm_min)+'mins'
-                        try:
-                            say('time is '+tm_hours+' and '+tm_mins)
-                        except:
-                            time=tm_hour+tm_min
-                            say(time)
+                            tm_hour = datetime.datetime.now().hour
+                            tm_hours = str(tm_hour)+'hours'
+                            tm_min=datetime.datetime.now().minute
+                            tm_mins=str(tm_min)+'mins'
+                            try:
+                               say('time is '+tm_hours+' and '+tm_mins)
+                            except:
+                               time=tm_hour+tm_min
+                               say(time)
                 if 'day' in st:
                     if 'today' in st:
                         day = day_c()
